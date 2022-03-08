@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelReservation.MainController">
+    <GridPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #7d7364; -fx-border-radius: 90,50,90,50; -fx-border-width: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.5" minWidth="10.0" prefWidth="296.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="150.0" text="Manage Extras" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="Sinhala MN" size="21.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="50.0" top="20.0" />
+            </GridPane.margin></Label>
+
+
+        <VBox GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <HBox>
+                <Label prefWidth="100.0" text=" Extra ID" textFill="WHITE" underline="true">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label prefWidth="139.0" text=" Description" textFill="WHITE" underline="true">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label alignment="CENTER" prefWidth="100.0" text="Price" textFill="WHITE" underline="true">
+                    <HBox.margin>
+                        <Insets top="15.0" />
+                    </HBox.margin></Label>
+                <Label prefWidth="139.0" text="Date" textFill="WHITE" underline="true">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </GridPane.margin>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </HBox>
+            <HBox>
+                <Label fx:id="Extra1ID" prefWidth="100.0" text="1234" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding></Label>
+                <Label fx:id="Extra1desc" prefWidth="139.0" text=" Extra 1 description" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="8.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label fx:id="Extra1price" alignment="CENTER" prefWidth="100.0" text="price1" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="2.0" top="15.0" />
+                    </HBox.margin></Label>
+                <Label fx:id="Extra1date" prefWidth="139.0" text="Extra 1 date" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </GridPane.margin>
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </HBox>
+            <HBox>
+                <Label fx:id="Extra2ID" prefWidth="100.0" text="1234" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding></Label>
+                <Label fx:id="Extra2desc" prefWidth="139.0" text="Extra 2 description" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label fx:id="Extra2price" alignment="CENTER" prefWidth="100.0" text="price2" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin></Label>
+                <Label fx:id="Extra2date" prefWidth="139.0" text="Extra 2 date" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="12.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </GridPane.margin>
+            </HBox>
+            <HBox>
+                <Label fx:id="Extra3ID" prefWidth="100.0" text="1234" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding></Label>
+                <Label fx:id="Extra3desc" prefWidth="139.0" text="Extra 3 description" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label fx:id="Extra3price" alignment="CENTER" prefWidth="100.0" text="price3" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin></Label>
+                <Label fx:id="Extra3date" prefWidth="139.0" text="Extra 3 date" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="11.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </GridPane.margin>
+            </HBox>
+            <HBox>
+                <Label fx:id="Extra4ID" prefWidth="100.0" text="1234" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding></Label>
+                <Label fx:id="Extra4desc" prefWidth="139.0" text="Extra 4 description" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <Label fx:id="Extra4price" alignment="CENTER" prefWidth="100.0" text="price4" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin></Label>
+                <Label fx:id="Extra4date" prefWidth="139.0" text="Extra 4 date" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="9.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Sinhala MN" size="13.0" />
+                    </font></Label>
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </GridPane.margin>
+            </HBox>
+            <GridPane.margin>
+                <Insets left="20.0" top="20.0" />
+            </GridPane.margin>
+
+        </VBox>
+        <HBox maxHeight="40.0" prefHeight="80.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+            <GridPane.margin>
+                <Insets left="45.0" />
+            </GridPane.margin>
+            <Label prefWidth="70.0" text="Extra ID:" textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="10.0" right="10.0" top="5.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Sinhala MN" size="13.0" />
+                </font>
+            </Label>
+            <ComboBox fx:id="findExtra">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+            </ComboBox>
+            <Button mnemonicParsing="false" onAction="#Editextra" prefWidth="53.5" text="Edit">
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DeleteExtra" style="-fx-background-color: af2426;" text="Delete" textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+                <effect>
+                    <Glow />
+                </effect>
+            </Button>
+        </HBox>
+
+
+
+
+
+    </GridPane>
+</AnchorPane>

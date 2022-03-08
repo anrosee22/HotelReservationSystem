@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelReservation.MainController">
+    <GridPane prefHeight="600.0" prefWidth="1024.0" style="-fx-border-color: #7d7364; -fx-border-radius: 90,50,90,50; -fx-border-width: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label alignment="CENTER" contentDisplay="CENTER" text="Record New Customer Details" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <font>
+                <Font name="Sinhala MN" size="18.0" />
+            </font>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin></Label>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Label fx:id="CustomerName" text="Customer Name: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="10.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustomerName">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor></TextField>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Label fx:id="CustomerEmail" text="Customer Email: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="15.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustomerEmail">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor></TextField>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Label text="Country: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="10.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustomerCountry">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+                <HBox.margin>
+                    <Insets left="45.0" />
+                </HBox.margin></TextField>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Label text="Town: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="10.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustomerTown">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+                <HBox.margin>
+                    <Insets left="55.0" />
+                </HBox.margin></TextField>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <Label text="Postcode: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="10.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCustomerPostcode">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+                <HBox.margin>
+                    <Insets left="35.0" />
+                </HBox.margin></TextField>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <Label fx:id="CardNo" text="Card Number: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="30.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <TextField fx:id="txtCardNo">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor></TextField>
+        </HBox>
+        <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <Label fx:id="CardExpiry" text="Card Expiry: " textFill="WHITE">
+                <HBox.margin>
+                    <Insets right="40.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <DatePicker fx:id="txtCardExpiry" prefWidth="160.5">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor></DatePicker>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </HBox>
+
+        <Button mnemonicParsing="false" onAction="#AddCustomerR" style="-fx-background-color: #7d7364; -fx-border-color: #7c6f55;" text="Register Customer" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Sinhala MN" size="13.0" />
+            </font></Button>
+        <Button mnemonicParsing="false" onAction="#BacktoR" style="-fx-background-color: #7d7364; -fx-border-radius: 50;" text="Back" textFill="WHITE" GridPane.rowIndex="8" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="150.0" />
+            </GridPane.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Sinhala MN" size="13.0" />
+            </font></Button>
+
+    </GridPane>
+
+</AnchorPane>

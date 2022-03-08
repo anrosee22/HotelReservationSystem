@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelReservation.MainController">
+    <GridPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #7d7364; -fx-border-radius: 90,50,90,50; -fx-border-width: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="296.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.5" minWidth="10.0" prefWidth="296.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="296.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label fx:id="viewRoomNum" alignment="CENTER" contentDisplay="CENTER" prefWidth="150.0" text="Room " textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="Sinhala MN" size="21.0" />
+            </font>
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin></Label>
+        <HBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Room Number : " textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="8.0" right="10.0" top="25.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Sinhala MN" size="13.0" />
+                </font></Label>
+            <Label fx:id="updateRoomNo" alignment="CENTER" prefWidth="90.0" text="123" textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="25.0" top="20.0" />
+                </HBox.margin></Label>
+            <GridPane.margin>
+                <Insets left="10.0" right="10.0" top="20.0" />
+            </GridPane.margin>
+        </HBox>
+        <HBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Label text="Room Type : " textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="10.0" right="10.0" top="25.0" />
+                </HBox.margin></Label>
+            <ChoiceBox fx:id="RegSetRoomType" prefWidth="160.5" value="Single">
+                <String fx:value="Single" />
+                <String fx:value="Double" />
+                <String fx:value="Triple" />
+                <String fx:value="Family" />
+                <HBox.margin>
+                    <Insets left="33.0" top="20.0" />
+                </HBox.margin>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor></ChoiceBox>
+            <GridPane.margin>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+        </HBox>
+        <HBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <Label text="Price per Night : " textFill="WHITE">
+                <HBox.margin>
+                    <Insets left="10.0" right="10.0" top="25.0" />
+                </HBox.margin></Label>
+            <TextField fx:id="RegPriceperNight" alignment="CENTER">
+                <HBox.margin>
+                    <Insets left="16.0" top="20.0" />
+                </HBox.margin></TextField>
+            <GridPane.margin>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+        </HBox>
+        <Button mnemonicParsing="false" onAction="#SaveEditRoom" prefWidth="60.0" style="-fx-background-color: #2a7e19;" text="Save" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+            <font>
+                <Font name="Sinhala MN" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <GridPane.margin>
+                <Insets right="160.0" top="15.0" />
+            </GridPane.margin>
+            <effect>
+                <Glow level="0.27" />
+            </effect></Button>
+        <Button mnemonicParsing="false" onAction="#DeleteRoom" style="-fx-background-color: af2426;" text="Delete" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+            <font>
+                <Font name="Sinhala MN" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Glow level="0.66" />
+            </effect>
+            <GridPane.margin>
+                <Insets left="220.0" top="15.0" />
+            </GridPane.margin></Button>
+        <Button mnemonicParsing="false" onAction="#BacktoMR" style="-fx-background-color: #7d7364; -fx-border-radius: 50;" text="Back" textFill="WHITE" GridPane.rowIndex="4" GridPane.valignment="TOP">
+            <GridPane.margin>
+                <Insets left="160.0" />
+            </GridPane.margin>
+            <font>
+                <Font name="Sinhala MN" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+    </GridPane>
+</AnchorPane>
